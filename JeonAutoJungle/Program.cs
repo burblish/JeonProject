@@ -615,7 +615,7 @@ namespace JeonJunglePlay
 
             JeonAutoJungleMenu = new Menu("JeonAutoJungle", "JeonAutoJungle", true);
             JeonAutoJungleMenu.AddItem(new MenuItem("isActive", "Activate")).SetValue(true);
-            JeonAutoJungleMenu.AddItem(new MenuItem("maxstacks", "Max Stacks").SetValue(new Slider(30, 1, 150)));
+            JeonAutoJungleMenu.AddItem(new MenuItem("maxstacks", "Max Stacks").SetValue(new Slider(600, 1, 600)));
             JeonAutoJungleMenu.AddItem(new MenuItem("autorecallheal", "Recall[for heal]")).SetValue(true);
             JeonAutoJungleMenu.AddItem(new MenuItem("hpper", "Recall on HP(%)").SetValue(new Slider(50, 0, 100)));
             JeonAutoJungleMenu.AddItem(new MenuItem("autorecallitem", "Recall[for item]")).SetValue(true);
@@ -623,7 +623,7 @@ namespace JeonJunglePlay
             JeonAutoJungleMenu.AddItem(new MenuItem("Invade", "InvadeEnemyJungle?")).SetValue(true);
             JeonAutoJungleMenu.AddItem(new MenuItem("k_dragon", "Add Dragon to Route on Lv").SetValue(new Slider(10, 1, 18)));
             if(Player.ChampionName == "MasterYi")
-                JeonAutoJungleMenu.AddItem(new MenuItem("yi_W", "Cast MasterYi-W(%)").SetValue(new Slider(85, 0, 100)));
+                JeonAutoJungleMenu.AddItem(new MenuItem("yi_W", "Cast MasterYi-W(%)").SetValue(new Slider(60, 0, 100)));
             JeonAutoJungleMenu.AddToMainMenu();
 
             setSmiteSlot();

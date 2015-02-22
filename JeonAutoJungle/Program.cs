@@ -990,7 +990,7 @@ namespace JeonJunglePlay
             #region 스택이 넘는지 체크 - check ur stacks
             foreach (var buff in Player.Buffs.Where(b => b.DisplayName == "Enchantment_Slayer_Stacks"))
             {
-                int maxstacks = JeonAutoJungleMenu.Item("maxstacks").GetValue<Slider>().Value;
+                int maxstacks = 600;
                 if (buff.Count >= maxstacks && !IsOVER) //--테스트
                 {
                     IsOVER = true;
